@@ -21,7 +21,7 @@ const App = () => {
         <div>
             <Router>
                 <Navbar />
-                <Routes>
+                <Routes basename={process.env.PUBLIC_URL}>
                     <Route path="/" exact component={Home} />
                     <Route path="/about-me" component={AboutMe} />
                     <Route path="/education" component={Education} />
