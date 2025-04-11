@@ -1,0 +1,120 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('index-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(50%);  
+  z-index: -1;  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  font-size: 1vw;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+}
+
+.bannerItem a {
+  display: block;
+  color: white;
+  padding: 1vw 2vw;
+  text-decoration: none;
+}
+
+.bannerItem a:hover {
+  background-color: #100;
+}
+
+#changingText {
+	font-size: 4vw;
+	color: white;
+	text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+	
+	padding-left: 5vw;
+	padding-top: 13vw;
+}
+
+.styled-button {
+  background-color: #black;
+  color: black;  
+  padding: 0.5vw 1.5vw;  
+  border: 3px solid #black; 
+  cursor: pointer;  
+  border-radius: 5px;  
+  font-size: 1.8vw;
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 20px;
+}
+
+.styled-button:hover {
+  background-color: #222;
+  color: white;
+}
+
+.directionButtons{
+	padding-left: 5vw;
+}
+
+footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      bottom: 0;
+	  margin-top: 15vw;
+	  padding-bottom: 1vw;
+    }
+
+    
+footer::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; 
+	margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
